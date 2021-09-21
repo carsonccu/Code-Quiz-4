@@ -1,15 +1,14 @@
-const quizcontainer = document.getElementById('quiz');
-const resultcontainer = document.getElementById('results');
-const submitbutton= document.getElementById('submit');
+const startButton = document.getElementById('start-button');
+const questionContainer = document.getElementById('question-container');
 
-function buildquiz(){}
+startButton.addEventListener('click', startQuiz)
 
+function startQuiz(){}
+    console.log('start')
 
-function showresults(){}
+function nextQuestion(){}
 
-buildquiz();
-
-submitbutton.addEventListener('click, showresults');
+function selectAnswer(){}
 
 const myquestions = [
         {

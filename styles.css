@@ -1,0 +1,28 @@
+h1 {
+    color: aqua;
+    display: flex;
+    justify-content: center;
+
+}
+body{
+    background: grey;
+}
+
+.info{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    background: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.start-button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}

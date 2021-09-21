@@ -8,17 +8,22 @@
     <title>Movie Quiz</title>
 </head>
 <body>
+    <div class="quiz-container">
+        <div id ="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-button" class="mybuttons">
+                <button class="button">Answer a</A></button>
+                <button class="button">Answer b</A></button>
+                <button class="button">Answer c</A></button>
+                <button class="button">Answer d</A></button>
+            </div>
+        </div>
+    </div class="startnextbutton">
     <h1>Popular Movie Quiz</h1>
         <p class ="info">In this quiz you will have 2 minutes to answer all the questions. If you answer a question incorrectly the timer will subtract 15 seconds. There is a total of 6 questions. You're final score will be recorded by the amount of time left on the clock.</p>
-        <div class="start-button"><button>Start Quiz</button></div>
-    <!--quiz questions-->
-    <div id="quiz"></div>
-        <button id="submit">Submit Quiz</button>
-        <div id="results"></div>
-        </section>
-        <footer>
-            <button class="nextquestion">Next Question</button>
-        </footer>
+        <button id="start-button" class="start-button button">Start Quiz</button>
+        <button id="next-button" class="start-button button">Next Question</button>
+
     <script src="script.js"></script>
 </body>
 </html>

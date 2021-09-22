@@ -7,11 +7,6 @@ var wrongAnswer = document.getElementById("wrong-answer")
 var gameOver = document.getElementById("game-over")
 var localScore= document.getElementById("local-score")
 var timeLeft = document.getElementById("timer-text")
-let shuffledQuestions, currentQuestionIndex
-
-
-startButton.addEventListener('click', startGame)
-
 
 const myquestions = [
         {
@@ -41,6 +36,28 @@ const myquestions = [
     },
     
 ]
+
+startButton.addEventListener('click', startQuiz)
+
+function startQuiz(){
+    for (var i=0; i < myquestions.length; i++)
+    return startQuiz
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // function startGame(){
     //     startButton.classList.add('hide')

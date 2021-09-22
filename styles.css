@@ -31,6 +31,8 @@ body{
     box-sizing: border-box;
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .quiz-container{
@@ -38,11 +40,8 @@ body{
     display:flex;
     justify-content: center;
     border-radius: 5px;
-    max-width: 75%;
+    max-width: 100%;
 }
-
-.start-button .next-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hide{
+    display:none;
 }

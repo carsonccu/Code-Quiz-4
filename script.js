@@ -19,7 +19,7 @@ const myquestions = [
     {
         question: "In Jerry Maguire what is the iconic saying",
         options: ["Stand with me!", "No days off!", "Show me the Money!", "Give me evertything you got!"],
-        answer: "Show me the Money"
+        answer: "Show me the Money!"
     },
     {
         question: "Who plays the Main character in the Movie Drive",
@@ -45,17 +45,14 @@ startButton.addEventListener('click', startQuiz)
 
 function startQuiz() {
     startButton.classList.add('hide')
-    // for (var i=0; i < myquestions[currentindex].options.length; i++){
-    //     console.log()
-    // }
     questionContainer.classList.remove('hide')
+    // resetState()
     showQuestion()
+
 }
 function showQuestion() {
     var question = myquestions[currentindex]
     questionElement.innerText = question.question
-    // for (var i=0; i <qestion.options.length; i++){
-    //     console.log()
     question.options.forEach(option => {
         console.log(option, question.answer, option === question.answer)
         const button = document.createElement("button")
@@ -68,9 +65,11 @@ function showQuestion() {
         questionContainer.appendChild(button)
     })
 }
-
-
-function timer() { }
+// function resetState() {
+//     while (questionContainer.firstChild) {
+//         questionContainer.removeChild(questionContainer.firstChild)
+//     }
+// }
 
 function selectAnswer(event) {
     var correctAnswer = event.target.dataset.correct
@@ -83,48 +82,5 @@ function selectAnswer(event) {
     showQuestion()
 }
 
-function checkAnswer() { }
 
 function finalscore() { }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function startGame(){
-    //     startButton.classList.add('hide')
-    //     shuffledQuestions = myquestions.sort(()=> Math.random()-.5)
-    //     currentQuestionIndex=0
-    //     questionContainer.classList.remove('hide')
-    //     setnextQuestion()
-    // }
-    // function setnextQuestion(){
-    //     showQuestion(shuffledQuestions[currentQuestionIndex])
-
-    // function showQuestion(question){
-    //     questionElement.innerText = question.question
-    //     question.answers.forEach(answer => {
-    //     const button = document.createElement("button")
-    //     button.innerText= answer.text
-    //     button.classList.add("btn")
-    //     if (answer.correct) {
-    //         button.dataset.correct = answer.correct
-    //     }
-    //     button.addEventListener("click", selectAnswer)
-    //     answerElement.appendChild(button)
-    //     })
-
-    // }
-    // function selectAnswer(){
-    // }
